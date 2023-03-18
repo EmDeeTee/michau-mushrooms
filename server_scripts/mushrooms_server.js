@@ -13,7 +13,7 @@ function addHungerToPlayer(player, h) {
 
 onEvent('item.right_click', event => {
 	const item = event.getItem();	
-    if (item.name === 'Brown Mushroom') {
+    if (item.id == 'minecraft:brown_mushroom') {
         addHungerToPlayer(event.player, 1)
         event.player.playSound('entity.player.burp', 1.0, 1.0)
         item.count--
